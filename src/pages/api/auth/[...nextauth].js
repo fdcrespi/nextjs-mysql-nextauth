@@ -41,11 +41,10 @@ export const authOptions = {
       secret: process.env.JWT_SECRET,
     }
   },
- /*  jwt: { 
+  /* jwt: { 
     secret: process.env.JWT_SECRET,
     encryption: true,
-    signingKey: process.env.JWT_SIGNING_PRIVATE_KEY,
-    encryptionKey: process.env.JWT_ENCRYPTION_PRIVATE_KEY,
+
     encryptionAlgorithm: 'RS256',
   }, */
   /* callbacks: {
@@ -80,8 +79,7 @@ export const authOptions = {
   },
   events: {
     async signIn(message) { /* on successful sign in */ },
-    async signOut(message) { /* on signout */
-    },
+    async signOut(message) { /* on signout */},
     async createUser(message) { /* user created */ },
     async linkAccount(message) { /* account linked to a user */ },
     async session(message) { /* session is active */ },
